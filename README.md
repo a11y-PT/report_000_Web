@@ -1,10 +1,10 @@
-# [Nome da entidade]
-- URL: [Inserir URL do site]
-- Proprietário: [Inserir proprietário]
-- Candidatura a: Selo [Inserir Bronze, Prata ou Ouro]
+# Nome da entidade
+
+- URL: [Link em texto da URL da entidade](URL do site da entidade)
+- Proprietário: Inserir proprietário
+- Candidatura a:  Inserir Selo Bronze, Selo Prata ou Selo Ouro
   
-## [Relatório da Auditoria da (Nome da Entidade)](https://unidade-acesso.github.io/report_00X/reporte_report_00X.html)
+## Consulte aqui: [Relatório da Auditoria da X](https://unidade-acesso.github.io/report_00X/reporte_report_00X.html)
 
 ### Recursos de apoio ao relatório:
-- [Guia de utilização do relatório das auditorias](https://unidade-acesso.github.io/reports/guia-utilizacao-relatorio-auditoria.html)
-- [Vídeo explicativo do relatório das auditorias](https://unidade-acesso.github.io/reports/guia-utilizacao-relatorio-auditoria.html)
+- [Guia de utilização do relatório de auditorias](https://unidade-acesso.github.io/reports/guiao.html)
