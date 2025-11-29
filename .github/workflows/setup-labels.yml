@@ -1,0 +1,28 @@
+name: Setup labels
+
+on:
+  push:
+    branches:
+      - main  # Ou a branch default do template
+  repository_dispatch:  # Também podes disparar manualmente
+
+jobs:
+  labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install GitHub Label Sync
+        run: npm install -g github-label-sync
+
+      - name: Apply labels
+        run: |
+          github-label-sync --config .github/labels/labels.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
