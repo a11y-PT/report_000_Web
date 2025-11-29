@@ -1,16 +1,16 @@
 ---
-website: Nome do sítio Web // Designação do website
-date: dd/mm/aaaa // data de criação
-url: https://dominio_sitio_web.pt // domínio do website
-owner: ARTE_IP // entidade a quem pertence o website
-seal: Ouro // Bronze, Prata ou Ouro
+website: "Nome do sítio Web" // Designação do website
+date: "dd/mm/aaaa" // data de criação
+url: "https://dominio_sitio_web.pt" // domínio do website
+owner: "ARTE_IP" // entidade a quem pertence o website
+seal: "Ouro" // Bronze, Prata ou Ouro
 ---
-# {% website %}
+# {{ website }}
 
-- Data de criação: {% date %}
-- URL: {% url %}
-- Propriedade: {% owner %}
-- Candidatura: {Bronze_ou_Prata_ou_Ouro}
+- Data de criação: {{ date }}
+- URL: {{ url }}
+- Propriedade: {{ owner }}
+- Candidatura: {{ seal }}
   
 ## Relatório de Auditoria
 
