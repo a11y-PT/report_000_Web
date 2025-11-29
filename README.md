@@ -14,11 +14,11 @@ seal: "Ouro"                          # Bronze, Prata ou Ouro
   
 ## Relatório de Auditoria
 
-Consulte aqui a última atualização: [Relatório do Teste criado por JF](report_001.html)
+Consulte aqui a última atualização: [Relatório do {{ website }}](report_001.html)
 
 <details>
   <summary>Histórico de atualizações</summary>
   <ul aria-label="lista de relatórios já efetuados">
-    <li><a href="28112025_report_001.html">(28/12/2025). Relatório do Teste criado por JF</a></li>
+    <li><a href="28112025_report_001.html">(dd/mm/aaa). Relatório do {{ website }}</a></li>
   </ul>
 </details>
