@@ -8,31 +8,31 @@ permissions:
 on:
   push:
     branches:
-      - main  # Ou a branch default do template
-  repository_dispatch:  # Também podes disparar manualmente
+      - main
+  repository_dispatch:  # Permite disparar manualmente
 
 jobs:
   labels:
     runs-on: ubuntu-latest
     steps:
+      # 1️⃣ Checkout do repositório
       - name: Check out repository
         uses: actions/checkout@v3
 
+      # 2️⃣ Setup Node.js (não é estritamente necessário para EndBug, mas mantém se quiseres)
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-# Step temporária para testar se o secret está acessível
+      # 3️⃣ Step temporária para testar se o secret está acessível
       - name: Test secret
         run: echo "${{ secrets.LABELS_TOKEN }}"
 
-      - name: Install GitHub Label Sync
-        run: npm install -g github-label-sync
-
+      # 4️⃣ Aplicar as labels com EndBug/label-sync
       - name: Apply labels
-        run: |          
-          github-label-sync --labels .github/labels/labels.yml --token ${{ secrets.LABELS_TOKEN }}
-
-        env:
-          GITHUB_TOKEN: ${{ secrets.LABELS_TOKEN }}
+        uses: EndBug/label-sync@v2
+        with:
+          config-file: .github/labels/labels.yml
+          token: ${{ secrets.LABELS_TOKEN }}
+          delete-other-labels: false
