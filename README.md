@@ -16,7 +16,7 @@ seal: "_Ouro_"                          # Entre as aspas escreve Bronze, Prata o
 
 ## Relatório de Auditoria
 
-O presente relatório resultou da auditoria da informação publicada na [Declaração de Acessibilidade e Usabilidade]({{ page.a11y_statement }}).
+<p>O presente relatório resultou da auditoria da informação publicada na <a href="{{ page.a11y_statement }}">Declaração de Acessibilidade e Usabilidade</a>.</p>
 
 Consulte aqui a última atualização: [Relatório do {{ page.website }}](report.html)
 
