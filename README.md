@@ -29,4 +29,4 @@ Consulte aqui a última atualização: [Relatório do {{ page.website }}](report
 
 <hr>
 
-<p><small>ARTE, I.P. - GitHubReports (v.1.0.3)</small></p>
+<p><small>ARTE, I.P. - GitTemplateReports (v.1.0.3)</small></p>
